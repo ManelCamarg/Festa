@@ -1,0 +1,168 @@
+*{
+    overflow-x: hidden;
+}
+
+.tamanhoicon{
+    font-size: 40px;
+}
+ 
+.sectionborda{
+    padding: 25px;
+    width:100%;
+    height: 30%;
+    box-shadow: 5px 5px 20px #845c41;
+    border-style: dotted;
+    border-radius:10px;
+    overflow-y: hidden;
+    color: #2f1e11;
+}
+ 
+.conteinerCursos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ 
+.flexivel{
+    display: flex;                  /*Organiza conteiners de forma flexivel*/
+    flex-direction: row;            /*Organiza horizontalmente*/
+    justify-content: space-between; /*Ajusta o espaço de elementos de forma uniforme*/}
+ 
+.responsivo{
+    flex-wrap: wrap;
+    justify-content:space-between;
+    display: flex;                  /*Organiza conteiners de forma flexivel*/
+    flex-direction: row;            /*Organiza horizontalmente*/
+    justify-content: space-between; /*Ajusta o espaço de elementos de forma uniforme*/}
+
+.responsivo {
+    max-width: 100%;
+    height: auto;
+}
+ 
+.tamanho{
+    height: 360px;
+    width: 360px;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover{
+transform:scale(1.1) ;
+}
+ 
+ 
+.centralizar{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+ 
+img{
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+   
+ 
+}
+ 
+.ajuste{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;/*espaçamento ajustado*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+figcaption{
+    margin-top: 10px;
+    font-family: Arial,sans-serif;
+    text-align: center;
+    flex-wrap: wrap; /*vai p proxima linha quando n tem espaço*/
+    justify-content: space-between;
+ 
+}
+body{
+ 
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;            /*Organiza horizontalmente*/
+}
+ 
+ 
+    footer span{
+        font-size: o.8em;
+        font-weight: 200;
+            
+    }
+
+    footer{
+        background-color: #d49a74;
+        padding: 15px;
+        display: 	flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    
+    }
+    
+div{
+    width: 100%;
+    align-content: center;
+ 
+}
+ 
+ /**casinha home**/
+ .icone-casa {
+  position: absolute; /* Ou fixed, dependendo do comportamento desejado */
+  top: 10px; /* Distância do topo */
+  left: 10px; /* Distância da esquerda */
+  z-index: 1000; /* Garante que o ícone esteja por cima de outros elementos */
+}
+
+.icone-casa img {
+  width: 30px; /* Largura do ícone */
+  height: 30px; /* Altura do ícone */
+}
+
+.icone-casa a {
+  display: block; /* Para que o link ocupe todo o espaço do ícone */
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/*Ajustes de responsividade*/
+
+@media (max-width: 768px){
+    .boximg{
+        flex: 1 1 48%;
+    }
+}
+ 
+@media (max-width: 480px){
+    .boximg{
+        flex: 1 1 100%;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    body{
+         font-size: 3vw;
+    }
+   .texto{
+         font-size: 6vw;
+   }
+}

@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* Estilo para a barra de navegação */
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 120px;
+    height: 25px;
+    text-transform: uppercase; /*letra maiúscula*/  
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+nav :hover{
+    color: rgb(255, 255, 74);
+}
+
+.tamanho{
+    cursor: pointer;
+    margin: 10px;
+    padding: 3px;
+    width: 10%;
+    height: auto;
+    align-items: right;
+    text-align: right;
+    border-radius: 20px;
+     box-shadow: 10px 10px 20px #65432199;
+    border-radius: 10px;
+}
+
+.ajuste{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.escrita{
+    text-align: center;
+    margin: 20px;
+    align-items: left;
+
+}
+
+.descrição{
+    width: 50%;
+    padding: 50px; 
+    font-size: 20px;
+}
+
+.fundo{
+    background-color: #ddc4a5;
+}
+
+.flexivel{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.conteiner{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;   
+    margin: 20px;
+    width:50%;
+}
+
+.fundo2{
+    background-color: rgb(251, 122, 122);
+    width: 100%;
+    height: auto;
+}
+
+.paralax{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p1{
+    background-image: url(./paralax\ fixo.jpg);
+}
+
+.sectionparallax{
+    width: 100%;
+    height: 540px;
+    border: 0px solid black;
+    overflow-y: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.conteinerCursos{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-wrap: wrap;
+}
+ 
+.tamanho{
+height: 280px;
+width: 280px;
+}
+ 
+
+             .linha {
+            display: flex;
+            gap: 40px; /* Espaçamento entre os blocos de imagens */
+        }
+ 
+        .bloco {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Espaço entre imagem e legenda */
+        }
+ 
+        .legenda {
+            font-size: 14px;
+            color: #555;
+            max-width: 150px;
+        }
+
+/*-------------------------------------------enfeite---------------------------------------------------------------*/
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    /* Tela de boas-vindas */
+    #welcome {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000d0; /* fundo escuro semi-transparente */
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      z-index: 1000;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    /* Animação de entrada */
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Animação de saída */
+    @keyframes fadeOut {
+      to { opacity: 0; }
+    }
+
+    /* Conteúdo da página */
+    .conteudo {
+      padding: 40px;
+      text-align: center;
+    }
+
+
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+
+    .container img{
+        width: 450px;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;;
+        
+    
+    }
+
+    .decoração{
+        box-shadow: 0 4px 8px rgba(101, 80, 40, 1.9) ;
+    }
+
+    .container img:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(101, 67, 33, 1);
+
+    }
+
+    footer span{
+        font-size: o.8em;
+        font-weight: 200;
+            
+    }
+
+    footer{
+        background-color: #d49a74;
+        padding: 15px;
+        display: 	flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    
+    }
+
+
+     
+ /*responsividade*/
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+ 
+/* Responsivo: celulares */
+@media (max-width: 480px) {
+  header, footer {
+    text-align: center;
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+  }
+}

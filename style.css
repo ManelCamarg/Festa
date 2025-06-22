@@ -281,12 +281,12 @@ Responsivo: celulares
 
   img {
     width: 80%; /* Ajusta a largura das imagens para 100% */
-    height: auto; /* Mantém a proporção das imagens */
+    height: 80%; /* Mantém a proporção das imagens */
   }
 
   .tamanho {
     width: 80%; /* Ajusta a largura dos elementos com a classe 'tamanho' para 100% */
-    height: auto; /* Mantém a altura automática */
+    height: 80%; /* Mantém a altura automática */
   }
 
   .descricao {

@@ -274,7 +274,7 @@ Responsivo: celulares
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 440px) {
   header, footer {
     text-align: center; /* Centraliza o texto no cabeçalho e rodapé */
   }

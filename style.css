@@ -239,7 +239,7 @@ width: 280px;
 
 
      
- /*responsividade*/
+ /*responsividade
 
 @media (max-width: 768px) {
   nav ul {
@@ -248,7 +248,7 @@ width: 280px;
   }
 }
  
-/* Responsivo: celulares */
+ Responsivo: celulares *//*
 @media (max-width: 480px) {
   header, footer {
     text-align: center;
@@ -258,4 +258,27 @@ width: 280px;
     width: 200px;
     height: 200px;
   }
+}
+*/
+
+/* Consultas de mídia para responsividade */
+@media (max-width: 768px) {
+    .item {
+        width: 90%; /* Aumenta a largura dos itens em telas menores */
+        margin: 10px auto; /* Centraliza os itens */
+    }
+    
+    header h1, footer {
+        font-size: 1.5em; /* Ajuste o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 1.2em; /* Ajuste em telas muito pequenas */
+    }
+
+    .item {
+        background-color: #FFCC00; /* Muda a cor do fundo do item em telas pequenas */
+    }
 }

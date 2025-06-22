@@ -239,7 +239,7 @@ width: 280px;
 
 
      
-/*responsividade*/
+/*responsividade
 
 @media (max-width: 768px) {
   nav ul {
@@ -248,7 +248,7 @@ width: 280px;
   }
 }
  
-/*Responsivo: celulares */
+Responsivo: celulares
 @media (max-width: 480px) {
   header, footer {
     text-align: center;
@@ -258,5 +258,40 @@ width: 280px;
     width: 200px;
     height: 200px;
   }
+}*/
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Muda a direção da navegação para coluna */
+    gap: 10px; /* Espaçamento entre os itens do menu */
+  }
+
+  .container {
+    flex-direction: column; /* Muda a direção do container para coluna */
+    gap: 20px; /* Espaçamento entre as imagens */
+  }
 }
+
+@media (max-width: 480px) {
+  header, footer {
+    text-align: center; /* Centraliza o texto no cabeçalho e rodapé */
+  }
+
+  img {
+    width: 100%; /* Ajusta a largura das imagens para 100% */
+    height: auto; /* Mantém a proporção das imagens */
+  }
+
+  .tamanho {
+    width: 100%; /* Ajusta a largura dos elementos com a classe 'tamanho' para 100% */
+    height: auto; /* Mantém a altura automática */
+  }
+
+  .descricao {
+    font-size: 16px; /* Reduz o tamanho da fonte para melhor legibilidade em telas menores */
+  }
+}
+
 

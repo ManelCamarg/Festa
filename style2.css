@@ -144,7 +144,7 @@ div{
 
 
 
-/*Ajustes de responsividade*/
+/*Ajustes de responsividade
 
 @media (max-width: 768px){
     .boximg{
@@ -165,4 +165,36 @@ div{
    .texto{
          font-size: 6vw;
    }
+}*/
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Muda a direção da navegação para coluna */
+    gap: 10px; /* Espaçamento entre os itens do menu */
+  }
+
+  .container {
+    flex-direction: column; /* Muda a direção do container para coluna */
+    gap: 20px; /* Espaçamento entre as imagens */
+  }
+}
+
+@media (max-width: 440px) {
+  header, footer {
+    text-align: center; /* Centraliza o texto no cabeçalho e rodapé */
+  }
+
+  img {
+    width: 80%; /* Ajusta a largura das imagens para 100% */
+    height: 80%; /* Mantém a proporção das imagens */
+  }
+
+  .tamanho {
+    width: 80%; /* Ajusta a largura dos elementos com a classe 'tamanho' para 100% */
+    height: 80%; /* Mantém a altura automática */
+  }
+
+  .descricao {
+    font-size: 16px; /* Reduz o tamanho da fonte para melhor legibilidade em telas menores */
+  }
 }
